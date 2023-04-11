@@ -1,6 +1,6 @@
 const exercise = require("../exercise1");
 
-describe("exercise", () => {
+describe("fizzbuzz", () => {
   it("should throw an exception if input is not a number", () => {
     expect(() => {
       exercise.fizzBuzz("1");
@@ -20,5 +20,10 @@ describe("exercise", () => {
   it("should return Buzz if input is divisible by 5", () => {
     const result = exercise.fizzBuzz(5);
     expect(result).toBe("Buzz");
+  });
+
+  it("should return input if its neither divisible by 3 or 5", () => {
+    const result = exercise.fizzBuzz(4);
+    expect(result).toBe(4);
   });
 });
