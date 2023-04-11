@@ -2,6 +2,10 @@
   "name": "testing-demo",
   "version": "1.0.0",
   "description": "",
+  "jest": {
+    "verbose": true,
+    "testURL": "http://localhost/"
+  },
   "main": "db.js",
   "directories": {
     "test": "tests"
